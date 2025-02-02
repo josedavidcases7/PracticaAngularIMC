@@ -1,0 +1,54 @@
+<div class="formulario">
+    <h2>Formulario Persona</h2>
+    <form>
+      
+      <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" #nombre placeholder="Ingresa tu nombre" />
+      </div>
+  
+     
+      <div class="campo">
+        <label>Sexo:</label>
+        <div class="radios">
+          <label>
+            <input checked type="radio" name="sexo" #sexo value="masculino" /> Masculino
+          </label>
+          <label>
+            <input type="radio" name="sexo" value="femenino" /> Femenino
+          </label>
+        </div>
+      </div>
+  
+    
+      <div class="campo">
+        <label>Peso (Kg):</label>
+        <div class="contador">
+          <button type="button" #restarPeso>-</button>
+          <input type="number" #peso value="70" min="0">
+          <button type="button" #sumarPeso>+</button>
+        </div>
+      </div>
+  
+    
+      <div class="campo">
+        <label>Altura (cm):</label>
+        <div class="contador">
+          <button type="button" #restarAltura>-</button>
+          <input type="number" #altura value="170" min="0">
+          <button type="button" #sumarAltura>+</button>
+        </div>
+      </div>
+  
+    
+      <div class="botones">
+        <button type="button" #btnCalcular>Calcular</button>
+        <button type="reset" #limpiar>Limpiar</button>
+      </div>
+    </form>
+
+    <div>
+      <span #resultado>Resultado:</span>
+    </div>
+  </div>
+  
